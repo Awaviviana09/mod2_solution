@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Hahmlet", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+.tittle {
+    text-align: center;
+    color: black;
+    font-size: 64px;
+    line-height: 1;
+    word-wrap: break-word;
+}
+
+.grid {
+    margin-top: 40px;
+}
+
+.item {
+    background: #D9D9D9;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.label {
+    height: 51px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    text-align: center;
+    line-height: 51px;
+    font-size: 24px;
+    color: white;
+}
+
+.text {
+    padding: 20px;
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+}
+
+
+.chicken {
+    background-color: #D19292;
+}
+
+.beef {
+    background-color: #E91D1D;
+}
+
+.sushi {
+    background-color: #F9FE04;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+
+    .item:last-child {
+        margin-right: 0;
+    }
+
+    .item:nth-child(3) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        display: flex;
+    }
+
+    .item {
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+
+    .item:last-child {
+        margin-right: 0;
+    }
+}
